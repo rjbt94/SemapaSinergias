@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Javascript bootatrap para visual-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<!---------------------------------- Nav ----------------------------------->   
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/Supply.png" alt="Logotipo" width="17%"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Value Creation
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end"> <!-- Use dropdown-menu-end class here -->
+                      <li><a class="dropdown-item" href="semapp.html">Mission & Values</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Semapa Partners
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end"> <!-- Use dropdown-menu-end class here -->
+                      <li><a class="dropdown-item" href="partners.html">Work Area</a></li>
+                      <li><a class="dropdown-item" href="partners.html">Suppliers</a></li>
+                      <li><a class="dropdown-item" href="partners.html">Markets</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Supplier
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end"> <!-- Use dropdown-menu-end class here -->
+                      <li><a class="dropdown-item" href="#">Become a Supplier</a></li>
+                      <li><a class="dropdown-item" href="#">Supplier Channel</a></li>
+                      <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+  
+
+<section id="user-login">
+
+  <h3> Login </h3>
+
+  <form action="user-login">
+
+    <div class="col-12">
+      <label for="username" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="username" placeholder="Choose Your Username" required="">
+      <div class="invalid-feedback">
+          Your username is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="password" class="form-label">Password</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="password" placeholder="Choose Your Password" required="">
+      <div class="invalid-feedback">
+          Password is required.
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <button class="w-20 btn btn-primary btn-lg" type="Login" id="btn-submitaccount">Login</button>
+
+</form>
+
+</section>
+
+
+  <!--Section Criar Conta-->
+    <section id="user-creation">
+      <h3>User Creation</h3>  
+
+        <div class="col-md-12 col-lg-12"> <!-- Formulário Criação de Conta-->
+            <form class="needs-validation" novalidate="">
+
+              <h4 class="mb-3">Company Information</h4>
+                
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label for="comp-name" class="form-label">Company Name</label>
+                      <input type="text" class="form-control" id="comp-name" placeholder="" required="">
+                      <small class="text-muted">Full name as displayed on card</small>
+                      <div class="invalid-feedback">
+                        Company Name is required
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <label for="comp-number" class="form-label">Company Number ID</label>
+                      <input type="text" class="form-control" id="comp-number" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Company number is required
+                      </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <label for="country-inf" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country-inf" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Country is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="city-inf" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city-inf" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            City is required
+                        </div>
+                      </div>
+                
+                      <div class="col-md-6">
+                        <label for="legal-struc" class="form-label">Organization Legal Structure</label>
+                        <input type="text" class="form-control" id="legal-struc" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Organization Legal Structure is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="acronym" class="form-label">Acronym</label>
+                        <input type="text" class="form-control" id="acronym" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Acronym is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="gen-email" class="form-label">General Email</label>
+                        <input type="text" class="form-control" id="gen-email" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            General Email is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="fin-email" class="form-label">Financial Area Email</label>
+                        <input type="text" class="form-control" id="fin-email" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Financial Area Email
+                        </div>
+                      </div>
+
+                      
+
+                    <!--Informação Pessoal-->
+                    
+                    <hr class="my-4">  
+                    
+                    <h4 class="mb-3">Personal Information</h4>
+
+                      
+
+                    <div class="col-md-6">
+                        <label for="client-name" class="form-label">Complete Name</label>
+                        <input type="text" class="form-control" id="client-name" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Complete Name is required
+                        </div>
+                      </div>
+                    
+                    <div class="col-md-6">
+                        <label for="client-country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="client-country" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Country is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="client-email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="client-email" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Email is required
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="client-phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="client-phone" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Insert Phone Number
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Choose Your Username" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="password" placeholder="Choose Your Password" required="">
+                        <div class="invalid-feedback">
+                            Password is required.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="saf-question" class="form-label">Safety Question</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="saf-question" placeholder="Choose Your Safety Question" required="">
+                        <div class="invalid-feedback">
+                            Safety Question is required.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="quest-answer" class="form-label">Safety Question Answer</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="quest-answer" placeholder="Choose Your Safety Question" required="">
+                        <div class="invalid-feedback">
+                            Safety Question Answer is required.
+                          </div>
+                        </div>
+                      </div>
+
+                        <!--Fim Informação Pessoal-->
+
+                    
+
+              <div class="row g-3"> 
+                
+
+        
+
+            <!--Checkboxs-->
+
+              <hr class="my-4">
+
+                
+
+                    <div class="form-check col-6">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">I accept T&Ds</label>
+                    </div>
+
+                    <div class="form-check col-6">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info"> I am not a robot :D </label>
+                    </div>
+
+                
+
+              <hr class="my-4">
+
+              <!--Checkboxs Fim-->
+
+              
+
+              
+
+                
+
+                
+
+              
+<!--Button-->
+              <button class="w-100 btn btn-primary btn-lg" type="submit" id="btn-submitaccount">Submit Account</button>
+
+            
+            </form>
+        </div>
+
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Javascript bootatrap para visual-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+
+    
+</body>
+</html>
